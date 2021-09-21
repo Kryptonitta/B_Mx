@@ -1,0 +1,1484 @@
+:root {
+	--main-bg-color: #f8fcf6;
+	--secondary-bg-color: #fafafa;
+	--primary-bg-btn: #0d573e;
+	--primary-text-color: #765d9b;
+	--secondary-text-color: #4c5a50;
+	--third-text-color: #f8fcf6;
+	--hover: #2f3330;
+}
+
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+/* CARDS */
+.card-block {
+	font-size: 1em;
+	position: relative;
+	margin: 0;
+	padding: 1em;
+	box-shadow: none;
+}
+
+.card {
+	font-size: 1em;
+	overflow: hidden;
+	padding: 5;
+	border: none;
+	margin-top: 20px;
+	border-radius: 1.25rem !important;
+}
+
+/* BOTONES */
+
+.btn-grad {
+	background: linear-gradient(0.25turn, #084631, #138760);
+	padding: 15px 45px;
+	text-align: center;
+	font-weight: 500;
+	font-family: "Poppins", sans-serif;
+	color: white !important;
+	border-radius: 13px;
+	display: block;
+	border: none;
+	min-height: 56px;
+	width: 300px;
+	font-size: 17px;
+}
+
+.btn2 {
+	width: 400px !important;
+}
+
+.btn-grad:hover {
+	background: #138760;
+}
+
+/* .btn-grad:focus {
+	box-shadow: 1px;
+	color: blue;
+} */
+
+/*----------- GENERAL -----------*/
+.secciones {
+	color: var(--primary-text-color) !important;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 400;
+	font-family: "Poppins", sans-serif;
+}
+
+a {
+	text-decoration: none !important;
+	color: white !important;
+}
+
+.selected {
+	font-weight: 500;
+}
+
+.bg-color {
+	color: #f8fcf6 !important;
+}
+
+nav li {
+	margin-left: 16px;
+}
+
+footer {
+	box-shadow: 0px -3px 6px 0px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px -3px 6px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px -3px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.shadow01 {
+	box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.3);
+	border-radius: 13px;
+	border: 1px solid #4c5a503f;
+}
+
+.parrafoCarrousel {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	font-family: "Roboto", sans-serif;
+	color: var(--secondary-text-color);
+	text-align: left !important;
+}
+
+.lead {
+	height: -webkit-fill-available;
+	font-size: 1.25rem;
+	font-weight: 300;
+	display: flex;
+	flex-direction: column;
+	/* height: auto; */
+	justify-content: flex-start;
+}
+
+.item {
+	width: 376px;
+	height: 336px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pad15 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	height: 350px !important;
+	background-color: var(--main-bg-color) !important;
+}
+
+.imgCarrousel {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	width: 80px;
+	height: 80px;
+	margin: 10px;
+}
+
+.item h5 {
+	color: var(--primary-text-color);
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 24px;
+	font-family: "Poppins", sans-serif;
+}
+
+/*-------------------------------------------------------------------------------------- MOBILE -----------*/
+@media (max-width: 576px) {
+	.btn-grad {
+		width: 280px !important;
+		padding: 3px;
+	}
+
+	.btn2 a {
+		font-size: 14px;
+		justify-content: center;
+	}
+	/*FOOTER*/
+
+	.pie {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		align-items: center;
+		padding: 40px 80px;
+	}
+
+	.pie__img {
+		height: 70px;
+	}
+
+	.pie__img img {
+		height: 70px;
+		width: auto;
+	}
+
+	.pie__izquierda {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.pie__izquierda--redes {
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	.pie__izquierda--redes a {
+		margin-left: 10px;
+		margin-right: 10px;
+		height: 60px;
+	}
+
+	.pie__izquierda--redes a img {
+		height: inherit;
+	}
+
+	footer {
+		background-color: var(--main-bg-color);
+	}
+
+	footer a img {
+		height: inherit;
+	}
+
+	footer p {
+		text-align: center;
+		margin-top: 30px;
+		font-size: 16px;
+		color: var(--secondary-text-color);
+	}
+
+	h2 {
+		font-family: "Poppins", sans-serif;
+		font: size 1.2rem;
+		font-weight: 700;
+		color: var(--primary-text-color);
+		margin: 0%;
+	}
+
+	/*------------------------------------------------------ INDEX */
+
+	.fondo__desktop,
+	.fondo__tablet {
+		display: none;
+	}
+
+	.foto1__desktop,
+	.foto1__tablet {
+		display: none;
+	}
+
+	.eBook__desktop,
+	.eBook__tablet {
+		display: none;
+	}
+
+	.introParrafo {
+		color: white;
+		font-family: "Poppins", sans-serif;
+		font-weight: 700;
+		width: 80%;
+		position: absolute;
+		top: 50%;
+		margin-left: 5%;
+	}
+
+	.introParrafo__uno {
+		font-size: 8rem;
+		line-height: 5.5rem;
+	}
+
+	.introParrafo__dos {
+		font-size: 3rem;
+	}
+
+	.introParrafo__tres {
+		font-size: 1.2rem;
+	}
+
+	.contenedor__soyBio {
+		display: flex;
+		flex-direction: column;
+		margin: 10% 3%;
+	}
+
+	.foto1__mobile {
+		margin: 2% 0%;
+	}
+	.contenedor__soyBio--texto {
+		font-family: "Poppins", sans-serif;
+		margin: 2%;
+	}
+
+	.contenedor__soyBio--texto h2 {
+		font-weight: 700;
+	}
+
+	.contenedor__soyBio--texto p {
+		font-size: 1.1rem;
+		color: var(--secondary-text-color);
+	}
+
+	.contenedor__eBook {
+		margin: 10% 3%;
+		font-family: "Poppins", sans-serif;
+	}
+
+	.parrafos,
+	.parrafosPpal,
+	.soyBio__sub {
+		margin-top: 20px;
+		color: var(--secondary-text-color);
+	}
+
+	.contenedor__eBook p {
+		width: 100%;
+		font-size: 1.1rem;
+	}
+
+	/* --------------------------------------------------SOBRE MI---- */
+
+	.foto2SobreMi__desktop,
+	.foto2SobreMi__tablet {
+		display: none;
+	}
+
+	.contenedor__sobreMi {
+		font-family: "Poppins", sans-serif;
+		margin: 8% 5%;
+	}
+
+	.contenedor__sobreMi--texto,
+	.contenedor__sobreMi--redes {
+		font-size: 1.1rem;
+	}
+
+	.caja__redes {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 3%;
+	}
+
+	.caja__redes p {
+		color: #765d9b;
+	}
+
+	.caja__redesSociales {
+		padding: 5% 1%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.caja__redesSociales a {
+		padding: 3% 3%;
+	}
+
+	.caja__redesSociales img {
+		width: 100%;
+	}
+
+	.foto2SobreMi__desktop {
+		display: none;
+	}
+
+	.contenedor__biohuman {
+		font-family: "Poppins", sans-serif;
+		margin: 5%;
+	}
+
+	.contenedor__biohuman h2 {
+		margin: 2%;
+	}
+
+	.contenedor__biohuman p {
+		margin: 2%;
+		font-weight: 400;
+		font-size: 1.1rem;
+	}
+
+	.contenedor__biohuman--texto {
+		margin: 2%;
+	}
+
+	/* -------------------------------------------------BIOHACKING------- */
+	.foto__BioDos--desktop,
+	.foto__BioDos--tablet {
+		display: none;
+	}
+
+	.eBook__desktop {
+		display: none;
+	}
+
+	.biohacking__Parrafo {
+		color: #ffffff;
+		font-family: "Poppins", sans-serif;
+		font-size: 20px;
+		font-weight: bold;
+		width: 90%;
+		position: absolute;
+		top: 80%;
+		left: 5%;
+		text-align: center;
+	}
+
+	.contenedor__biohacking {
+		font-family: "Poppins", sans-serif;
+		margin: 10% 5%;
+	}
+
+	.contenedor__bio--comoComenzar {
+		display: flex;
+	}
+
+	.comoComenzar__num {
+		color: #765d9b;
+		font-weight: 600;
+		font-size: 120px;
+		width: 25%;
+		padding-right: 5%;
+		text-align: center;
+	}
+
+	.comoComenzar__tex {
+		color: #4c5a50;
+		display: flex;
+		align-items: center;
+		font-size: 1.1rem;
+		font-weight: 400;
+		width: 70%;
+		margin-left: 5%;
+	}
+
+	.contenedor__biohacking--comoComenzar p {
+		margin: 2%;
+	}
+
+	.sobreBiohacking {
+		font-family: "Poppins", sans-serif;
+		margin: 5%;
+	}
+
+	.sobreBio__text,
+	.eBook__texto p {
+		font-size: 1.1rem;
+	}
+
+	.parrafoCarrousel {
+		font-size: 1rem;
+	}
+
+	.foto__BioDos--responsive {
+		margin-bottom: 3%;
+	}
+
+	.contenedor__eBook--bio {
+		font-family: "Poppins", sans-serif;
+		margin: 10% 5%;
+	}
+
+	.eBook__responsive {
+		margin-bottom: 3%;
+	}
+
+	/*RECOMENDACIONES*/
+
+	.reco__introParrafo {
+		font-family: "Poppins", sans-serif;
+		font-size: 20px;
+		font-weight: 700;
+		text-align: center;
+		margin: 5% 0%;
+	}
+
+	.reco__foto--desktop,
+	.reco__foto--tablet,
+	.foto__tips--desktop,
+	.foto__tips--tablet {
+		display: none;
+	}
+
+	.biohacking__Parrafo--reco {
+		font-family: "Poppins", sans-serif;
+		font-weight: 600;
+		color: var(--primary-text-color);
+		text-align: center;
+	}
+
+	.contenedor__cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 3%;
+	}
+
+	.contenedor__cards--caja {
+		display: flex;
+		margin: 2%;
+	}
+
+	.caja__img,
+	.caja__tex {
+		width: 50%;
+	}
+
+	.reco__tips {
+		margin: 5%;
+	}
+
+	.icons {
+		width: 15%;
+		height: 15%;
+		align-items: flex-start;
+	}
+
+	.reco__tips--texto {
+		margin: 2%;
+	}
+
+	.reco__tips--texto h2 {
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin: 5%;
+	}
+
+	.tips {
+		display: flex;
+		padding: 3%;
+	}
+
+	.tips p {
+		display: flex;
+		align-items: center;
+		font-family: "Poppins", sans-serif;
+		font-size: 1.1rem;
+		padding-left: 5%;
+	}
+
+	/*CONTACTO*/
+
+	.contenedor__contacto--texto {
+		margin: 20px 15px !important;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contenedor__contacto--texto p {
+		font-family: "Poppins", sans-serif;
+		font-size: 1.1rem;
+		font-weight: 400;
+	}
+}
+
+/*------------------------------------------------------------------------------------------------ TABLET -----------*/
+@media (min-width: 576px) and (max-width: 992px) {
+	body {
+		background-color: #ffffff;
+	}
+
+	/*FOOTER*/
+
+	.pie {
+		display: flex;
+		justify-content: space-between;
+		height: auto;
+		align-items: center;
+		padding: 40px 80px;
+	}
+
+	.pie__img {
+		height: 160px;
+	}
+
+	.pie__img img {
+		height: 150px;
+		width: auto;
+	}
+
+	.pie__izquierda {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.pie__izquierda--redes {
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	.pie__izquierda--redes a {
+		margin-left: 10px;
+		margin-right: 10px;
+		height: 60px;
+	}
+
+	.pie__izquierda--redes a img {
+		height: inherit;
+	}
+
+	footer {
+		background-color: var(--main-bg-color);
+	}
+
+	footer a img {
+		height: inherit;
+	}
+
+	footer p {
+		text-align: center;
+		margin-top: 30px;
+		font-size: 16px;
+		color: var(--secondary-text-color);
+	}
+
+	h2 {
+		font-family: "Poppins", sans-serif;
+		font: size 34px;
+		font-weight: 700;
+		color: var(--primary-text-color);
+		margin: 0%;
+	}
+
+	/*--------------------------------------- INDEX */
+	.fondo__desktop,
+	.fondo__mobile {
+		display: none;
+	}
+
+	.foto1__desktop,
+	.foto1__mobile {
+		display: none;
+	}
+
+	.eBook__desktop,
+	.eBook__mobile {
+		display: none;
+	}
+
+	.introParrafo {
+		font-family: "Roboto", sans-serif;
+		width: 56%;
+		position: absolute;
+		top: 65%;
+		left: 5%;
+	}
+
+	.introParrafo__uno {
+		margin-left: -5px;
+		margin-bottom: 0%;
+		color: white;
+		font-size: 8rem;
+		font-weight: 700;
+		line-height: 5.5rem;
+	}
+
+	.introParrafo__dos {
+		color: white;
+		font-size: 3rem;
+		font-weight: 700;
+	}
+
+	.introParrafo__tres {
+		color: white;
+		font-size: 26px;
+		font-family: "Poppins", sans-serif;
+		font-weight: 500;
+		line-height: 38px;
+	}
+
+	.contenedor__soyBio {
+		display: flex;
+		flex-direction: row;
+		margin: 10% 5%;
+	}
+
+	.contenedor__soyBio--texto {
+		margin: 0% 2%;
+	}
+
+	.contenedor__eBook {
+		margin: 10% 5%;
+	}
+
+	.contenedor__eBook p {
+		width: 80%;
+		margin: 3% 0.5%;
+	}
+
+	p {
+		font-family: "Poppins", sans-serif;
+		font-size: 20px;
+		color: var(--secondary-text-color);
+	}
+
+	/* -----------------------------------------------------SOBRE MI */
+
+	.foto2SobreMi__desktop,
+	.foto2SobreMi__mobile {
+		display: none;
+	}
+
+	.contenedor__sobreMi {
+		color: #4c5a50;
+		font-family: "Poppins", sans-serif;
+		font-weight: 400;
+		margin: 10% 3%;
+	}
+
+	.contenedor__sobreMi h2 {
+		margin: 0% 2%;
+	}
+
+	.sobreMi__caja {
+		display: flex;
+	}
+
+	.soyBio__sub2 {
+		font-size: 20px;
+		line-height: 1.4rem;
+	}
+
+	.soyBio__sub {
+		font-size: 16px;
+		line-height: 1.4rem;
+	}
+
+	.contenedor__sobreMi--texto,
+	.contenedor__sobreMi--redes {
+		margin: 0% 2%;
+		width: 45%;
+	}
+
+	.caja__redes {
+		padding: 10% 3%;
+		margin-top: 20%;
+	}
+
+	.caja__redes p {
+		color: #765d9b;
+	}
+
+	.caja__redesSociales {
+		padding-bottom: 20%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.caja__redesSociales a {
+		padding: 8% 3%;
+	}
+
+	.caja__redesSociales img {
+		width: 100%;
+	}
+
+	.foto2SobreMi__responsive {
+		display: none;
+	}
+
+	.contenedor__biohuman {
+		font-family: "Poppins", sans-serif;
+		margin: 10% 3%;
+		display: flex;
+	}
+
+	.foto2SobreMi__tablet,
+	.contenedor__biohuman--texto {
+		width: 45%;
+		margin: 2%;
+	}
+
+	.contenedor__biohuman--texto {
+		padding-top: 2%;
+	}
+
+	/*--------------------------------------------------BIOHACKING */
+
+	.foto__BioDos--desktop,
+	.foto__BioDos--mobile {
+		display: none;
+	}
+
+	.eBook__desktop,
+	.eBook__mobile {
+		display: none;
+	}
+
+	.biohacking__Parrafo {
+		color: #ffffff;
+		font-family: "Poppins", sans-serif;
+		font-size: 26px;
+		font-weight: 600;
+		position: absolute;
+		text-align: center;
+		width: 70%;
+		left: 16px;
+		top: 80%;
+		margin: 0% 12%;
+	}
+
+	.contenedor__biohacking {
+		font-family: "Poppins", sans-serif;
+		font-weight: 400;
+		margin: 5%;
+	}
+
+	.contenedor__biohacking--texto {
+		justify-content: center;
+	}
+
+	.contenedor__biohuman--texto p {
+		line-height: 1.6rem;
+	}
+	.contenedor__biohacking--texto h2 {
+		text-align: center;
+		margin: 10px !important;
+	}
+
+	.contenedor__comoComenzar {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		padding: 0% 0%;
+	}
+
+	.contenedor__bio--comoComenzar {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 45%;
+	}
+
+	.comoComenzar__num {
+		color: #765d9b;
+		font-weight: 600;
+		font-size: 120px;
+		line-height: 7.5rem;
+		margin: 0%;
+	}
+
+	.comoComenzar__tex {
+		text-align: center;
+		font-size: 17px;
+		line-height: 1.4rem;
+	}
+
+	.contenedor__biohacking--comoComenzar p {
+		margin: 1%;
+		font-size: 1.1rem;
+	}
+
+	.sobreBiohacking {
+		font-family: "Poppins", sans-serif;
+		margin: 3%;
+		display: flex;
+	}
+
+	.foto__BioDos--tablet {
+		width: 50%;
+		margin: 2%;
+	}
+	.sobreBio__text {
+		width: 50%;
+		font-family: "Poppins", sans-serif;
+		font-weight: 400;
+	}
+
+	.sobreBio__text h2 {
+		font-weight: 600;
+		font-size: 1.8rem;
+	}
+	.sobreBio__text p {
+		font-size: 17px;
+		line-height: 1.4rem;
+		margin-bottom: 4%;
+	}
+
+	.parrafoCarrousel {
+		font-family: "Poppins", sans-serif;
+		font-size: 1rem;
+		line-height: 1.4rem;
+	}
+
+	.contenedor__eBook--bio {
+		display: flex;
+		margin: 3%;
+	}
+
+	.contenedor__eBook--bio .eBook__tablet {
+		margin: 2%;
+	}
+
+	.eBook__texto {
+		margin: 5% 0%;
+	}
+
+	.eBook__texto h2 {
+		font-weight: 600;
+		font-size: 1.8rem;
+	}
+	.eBook__texto p {
+		font-size: 1rem;
+		line-height: 1.4rem;
+		margin-bottom: 4%;
+	}
+	/*----------------------------------------RECOMENDACIONES*/
+
+	.reco__foto--desktop,
+	.reco__foto--mobile,
+	.foto__tips--desktop {
+		display: none;
+	}
+
+	.reco__introParrafo {
+		font-family: "Poppins", sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		text-align: center;
+		margin: 5% 0%;
+	}
+
+	.biohacking__Parrafo--reco {
+		font-family: "Poppins", sans-serif;
+		font-weight: 600;
+		color: var(--primary-text-color);
+		text-align: center;
+	}
+
+	.contenedor__cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 3%;
+	}
+
+	.contenedor__cards--caja {
+		width: 46%;
+		display: flex;
+		margin: 2%;
+	}
+
+	.caja__img,
+	.caja__tex {
+		width: 50%;
+	}
+
+	.reco__tips {
+		display: flex;
+		margin: 5%;
+	}
+
+	.icons {
+		width: 15%;
+		height: 15%;
+		align-items: flex-start;
+	}
+
+	.reco__tips--texto {
+		margin: 2%;
+	}
+
+	.reco__tips--texto h2 {
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin: 5%;
+	}
+
+	.tips {
+		display: flex;
+		padding: 3%;
+	}
+
+	.tips p {
+		display: flex;
+		align-items: center;
+		font-family: "Poppins", sans-serif;
+		font-size: 1.1rem;
+		padding-left: 5%;
+	}
+
+	/*-------------------------------------------------CONTACTO*/
+
+	.contenedor__contacto--titulo {
+		font-family: "Poppins", sans-serif;
+		font-weight: 700;
+	}
+
+	.contenedor__contacto--texto {
+		margin: 3% 5%;
+	}
+}
+
+/*---------------------------------------------------------------------------------------------------- D E S K T O P ---*/
+
+@media (min-width: 992px) {
+	/*-----------------------------------------------------------GENERAL*/
+	.parrafos {
+		font-family: "Poppins", sans-serif;
+		font-size: 20px;
+		line-height: 24px;
+		color: var(--secondary-text-color);
+	}
+
+	.parrafosPpal {
+		font-family: "Poppins", sans-serif;
+		font-size: 22px;
+		color: var(--secondary-text-color);
+		line-height: 24px;
+	}
+
+	.titular {
+		font-family: "Poppins", sans-serif;
+		font-size: 34px;
+		color: white;
+		line-height: 37px;
+		font-weight: 600;
+	}
+
+	/*-----------------------------------------------------------NAVBAR*/
+	.navbar {
+		padding: 0.5rem 3rem !important;
+	}
+
+	.selected {
+		border-top: 2px solid !important;
+		text-decoration-color: var(--primary-text-color);
+		padding: 6px !important;
+	}
+
+	/*-----------------------------------------------------------FOOTER*/
+
+	.pie {
+		display: flex;
+		height: auto;
+		justify-content: space-between;
+		padding: 40px 80px;
+	}
+
+	.pie__img {
+		height: 160px;
+	}
+
+	.pie__img img {
+		height: 150px;
+		width: auto;
+	}
+
+	.pie__izquierda {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
+	.pie__izquierda--redes {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 20px;
+	}
+
+	.pie__izquierda--redes a {
+		margin-left: 20px;
+		height: 60px;
+	}
+
+	.pie__izquierda--redes a img {
+		height: inherit;
+	}
+
+	footer {
+		background-color: var(--main-bg-color);
+		border-top: linear-gradient(0, red, white);
+	}
+
+	footer a img {
+		height: inherit;
+	}
+
+	footer p {
+		text-align: center;
+		margin-top: 30px;
+		font-size: 16px;
+		color: var(--secondary-text-color);
+	}
+
+	h2 {
+		font-family: "Poppins", sans-serif;
+		font: size 34px;
+		font-weight: 700;
+		color: var(--primary-text-color);
+		margin: 0%;
+	}
+
+	/* --------------------------------------------------------I N D E X---------------- */
+
+	.fondo__mobile,
+	.fondo__tablet {
+		display: none;
+	}
+
+	.foto1__mobile,
+	.foto1__tablet {
+		display: none;
+	}
+
+	.foto__BioDos--responsive {
+		display: none;
+	}
+
+	.eBook__mobile,
+	.eBook__tablet {
+		display: none;
+	}
+
+	.contenedor__intro {
+		font-family: "Poppins", sans-serif;
+	}
+
+	.introParrafo {
+		font-family: "Poppins", sans-serif;
+		font-weight: 500;
+		width: 50%;
+		position: absolute;
+		top: 30%;
+		left: 20%;
+	}
+
+	.introParrafo__uno {
+		margin-left: -5px;
+		color: white;
+		font-size: 8rem;
+		line-height: 5.5rem;
+	}
+
+	.introParrafo__dos {
+		color: white;
+		font-size: 3rem;
+	}
+
+	.introParrafo__tres {
+		color: white;
+		font-size: 34px;
+		font-family: "Poppins", sans-serif;
+		font-weight: 500;
+		line-height: 38px;
+	}
+
+	.contenedor__soyBio {
+		display: flex;
+		flex-direction: row;
+		margin: 5%;
+	}
+
+	.contenedor__soyBio--texto {
+		align-items: center;
+		margin: 2%;
+		line-height: 1.7rem;
+	}
+
+	.contenedor__eBook {
+		margin: 5%;
+	}
+
+	.contenedor__eBook p {
+		width: 40%;
+		margin-top: 1%;
+	}
+
+	.contenedor__sobreMi--titulo {
+		padding-bottom: 10px;
+	}
+
+	p {
+		font-family: "Poppins", sans-serif;
+		font-size: 18px;
+		color: var(--secondary-text-color);
+	}
+
+	/* -------------------------------------------------------S O B R E - M I--------*/
+
+	.contenedor__biohuman {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--third-text-color);
+	}
+
+	.foto2SobreMi__tablet,
+	.foto2SobreMi__mobile {
+		display: none;
+	}
+
+	.contenedor__sobreMi {
+		color: #4c5a50;
+		font-family: "Poppins", sans-serif;
+		font-weight: 400;
+		font-size: 18px;
+		margin: 5% 3%;
+	}
+
+	.contenedor__sobreMi h2 {
+		margin: 0% 0% 0% 2%;
+	}
+
+	.sobreMi__caja {
+		display: flex;
+	}
+
+	.contenedor__sobreMi--texto,
+	.contenedor__sobreMi--redes {
+		margin: 0% 0% 0% 2%;
+		width: 50%;
+	}
+
+	.contenedor__soyBio--texto {
+		margin: auto 40px !important;
+	}
+
+	.caja__redes {
+		padding: 9% 8%;
+		margin-right: 30px;
+		background-color: var(--third-text-color);
+	}
+
+	.caja__redes p {
+		color: #765d9b;
+		text-align: center;
+		font-size: 20px;
+		font-family: "Poppins", sans-serif;
+	}
+
+	.caja__redesSociales {
+		display: flex;
+		justify-content: center;
+	}
+
+	.caja__redesSociales a {
+		padding: 10px 15px;
+	}
+
+	.contenedor__biohuman {
+		font-family: "Poppins", sans-serif;
+		margin: 5%;
+		display: flex;
+	}
+
+	.foto2SobreMi__desktop,
+	.contenedor__biohuman--texto {
+		width: 45%;
+		margin: 2%;
+	}
+
+	/* -------------------------------------------------------BIOHACKING----------- */
+
+	.foto__BioDos--mobile,
+	.foto__BioDos--tablet {
+		display: none;
+	}
+
+	.eBook__tablet,
+	.eBook__mobile {
+		display: none;
+	}
+
+	.biohacking__Parrafo {
+		position: absolute;
+		width: 50%;
+		left: 16px;
+		top: 80%;
+		margin: 0% 5%;
+	}
+
+	.contenedor__biohacking {
+		background-color: var(--third-text-color);
+		margin: 5%;
+	}
+
+	.contenedor__comoComenzar {
+		display: flex;
+		margin: 0% 3%;
+	}
+
+	.contenedor__bio--comoComenzar {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 25%;
+	}
+
+	.comoComenzar__num {
+		color: #765d9b;
+		font-weight: 600;
+		font-size: 130px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.comoComenzar__tex {
+		text-align: center;
+	}
+
+	.contenedor__biohacking--comoComenzar {
+		padding: 3%;
+	}
+
+	.sobreBiohacking {
+		font-family: "Poppins", sans-serif;
+		margin: 3%;
+		display: flex;
+	}
+
+	.foto__BioDos--desktop {
+		width: 55%;
+		margin: 0% 3%;
+		padding-right: 1%;
+	}
+	.sobreBio__text {
+		width: 34%;
+	}
+
+	.sobreBio__text {
+		font-family: "Poppins", sans-serif;
+		font-weight: 400;
+	}
+
+	.contenedor__eBook--bio {
+		display: flex;
+		margin: 3% 3%;
+	}
+
+	.eBook__desktop {
+		margin: 0% 2%;
+	}
+
+	.eBook__texto {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: left;
+		vertical-align: middle;
+	}
+
+	/*--------------------------------------------------------RECOMENDACIONES*/
+
+	.reco__introParrafo {
+		font-family: "Poppins", sans-serif;
+		font-size: 40px;
+		font-weight: 600;
+		text-align: center;
+		width: 60%;
+		position: absolute;
+		top: 90%;
+		left: 20%
+	}
+
+	.reco__foto--tablet,
+	.reco__foto--mobile,
+	.foto__tips--tablet {
+		display: none;
+	}
+
+	.contenedor__cards {
+		margin-top: 30px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 3%;
+		margin-top: 100px;
+	}
+
+	.contenedor__cards--caja {
+		width: 46%;
+		display: flex;
+		margin: 2%;
+	}
+
+	.caja__img,
+	.caja__tex {
+		width: 50%;
+	}
+
+	.card-body {
+		font-family: "Poppins", sans-serif !important;
+	}
+
+	.card-title {
+		font-family: "Roboto", sans-serif;
+		font-size: 23px;
+		line-height: 28px;
+		color: var(--secondary-text-color);
+		font-weight: 400;
+	}
+
+	.card-text {
+		font-family: "Poppins", sans-serif;
+		font-size: 19px;
+		line-height: 24px;
+		color: var(--secondary-text-color);
+		font-weight: 400;
+	}
+
+	.card-text2 {
+		font-family: "Poppins", sans-serif;
+		font-size: 20px;
+		line-height: 24px;
+		color: var(--primary-bg-btn);
+		font-weight: 500 !important;
+	}
+
+	.card-text3 a {
+		font-family: "Poppins", sans-serif;
+		font-size: 17px;
+		line-height: 18px;
+		color: var(--primary-bg-btn) !important;
+		font-weight: 600;
+	}
+
+	.card-text3 a:hover {
+		color: var(--primary-text-color) !important;
+	}
+
+	.reco__tips {
+		display: flex;
+		margin: 5%;
+	}
+
+	.reco__tips {
+		display: flex;
+		width: 90%;
+		margin: 60px auto;
+		background-color: var(--main-bg-color);
+	}
+
+	.icons {
+		width: 15%;
+		height: 15%;
+		align-items: flex-start;
+	}
+
+	.reco__tips--texto {
+		margin: 2%;
+	}
+
+	.reco__tips--texto h2 {
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin: 5%;
+	}
+
+	.tips {
+		display: flex;
+		padding: 3%;
+	}
+
+	.tips p {
+		display: flex;
+		align-items: center;
+		font-family: "Poppins", sans-serif;
+		font-size: 1.1rem;
+		padding-left: 5%;
+	}
+
+	/*--------------------------------------------------------------------------CONTACTO*/
+
+	.contenedor__contacto {
+		display: flex;
+		font-family: "Poppins", sans-serif;
+	}
+
+	.contenedor__contacto--img {
+		width: 60%;
+	}
+
+	.contenedor__contacto--texto {
+		width: 40%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: left;
+		margin: 20px;
+	}
+}
